@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет стоимости</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header>
+    <h1>Language School</h1>
+    <nav>
+        <a href="лаба 3.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="calculator.html">Расчет стоимости</a>
+    </nav>
+</header>
+<main>
+    <h2>Расчёт стоимости обучения</h2>
+
+    <div class="calculator">
+        <label>Выберите язык:</label>
+        <select id="language">
+            <option value="1000">Английский</option>
+            <option value="900">Турецкий</option>
+            <option value="1100">Немецкий</option>
+        </select>
+
+        <label>Количество занятий:</label>
+        <input type="number" id="lessons" min="1" value="1">
+
+        <label>Формат обучения:</label>
+        <select id="format">
+            <option value="1">Онлайн</option>
+            <option value="1.2">Очно</option>
+        </select>
+        <button onclick="calculate()">Рассчитать</button>
+        <p id="result"></p>
+    </div>
+</main>
+<footer>
+    <p>© 2026 Language School</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

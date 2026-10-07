@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f5ff;
+    color: #222;
+}
+header {
+    background: #536dfe;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.courses div {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+.calculator {
+    background: white;
+    padding: 30px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+label, select, input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input, select {
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #536dfe;
+    color: white;
+    cursor: pointer;
+    animation: buttonColor 2s infinite alternate;
+}
+button:hover {
+    transform: scale(1.05);
+}
+@keyframes buttonColor {
+    from {
+        background: #536dfe;
+    }
+    to {
+        background: #ff4081;
+    }
+}
+.calculator {
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
